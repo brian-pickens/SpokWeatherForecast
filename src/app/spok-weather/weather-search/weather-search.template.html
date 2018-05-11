@@ -1,0 +1,19 @@
+
+<div class="jumbotron weather-search">
+        <h1 class="display-4">Forecast Search</h1>
+        <p class="lead">Search Spok for your local forecast!</p>
+        <hr class="my-4">
+        <p>Type in your city and state in the box below</p>
+        <p class="lead">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-primary" type="button"
+                        ng-click="$weatherSearch.search()"
+                        ng-disabled="$weatherSearch.searchText == ''">Search</button>
+                    </div>
+                    <input type="text" ng-model="$weatherSearch.searchText" class="form-control" id="weatherSearch" placeholder="Minneapolis, MN">
+                </div>
+        </p>
+        
+        <ui-view></ui-view>
+</div>

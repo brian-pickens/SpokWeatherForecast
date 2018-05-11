@@ -1,0 +1,9 @@
+@import "../../common/styles/common.variables.scss";
+@import "../../common/styles/common.style.scss";
+
+// Component Styles
+@import "./weather-search/weather-search.style.scss";
+
+.spok-weather {
+    margin-top: 20px;
+}
